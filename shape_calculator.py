@@ -7,6 +7,9 @@ class Rectangle():
       self.area = self.width * self.height
       return(self.area)
 
+  def get_perimeter(self):
+      self.perimeter = 2 * self.width + 2 * self.height
+      return(self.perimeter)
 
 
 class Square(Rectangle):
