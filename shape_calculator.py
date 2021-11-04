@@ -34,3 +34,5 @@ class Square(Rectangle):
       self.height = side
       super().__init__(self.width, self.height)
 
+  def __str__(self):
+      return("Square(side=" + str(self.width) + ")")
