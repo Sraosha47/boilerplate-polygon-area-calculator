@@ -23,12 +23,15 @@ class Rectangle():
         return(self.diagonal)
 
     def get_picture(self):
-        self.picture = ''
-        i = 0
-        while i < (self.height):
-            self.picture += self.width * "*" + "\n"
-            i += 1
-        return(self.picture)
+        if self.width <= 50 and self.height <= 50:
+            self.picture = ''
+            i = 0
+            while i < (self.height):
+                self.picture += self.width * "*" + "\n"
+                i += 1
+            return(self.picture)
+        else:
+            return("Too big for picture")
 
     def set_width(self, width):
         self.width = width
