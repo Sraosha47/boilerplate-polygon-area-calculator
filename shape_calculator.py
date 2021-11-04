@@ -27,6 +27,13 @@ class Rectangle():
             self.picture += self.width * "*" + "\n"
             i += 1
         return(self.picture)
+
+    def set_width(self, width):
+        self.width = width
+    
+    def set_height(self, height):
+        self.height = height
+
     #endregion----------------------------------------------------------
 class Square(Rectangle):
     def __init__(self, side):
@@ -36,5 +43,9 @@ class Square(Rectangle):
 
     def __str__(self):
         return("Square(side=" + str(self.width) + ")")
+
+    def set_side(self, side):
+        self.width = side
+        self.height = side
 
 shape_calc_test(Rectangle, Square)
