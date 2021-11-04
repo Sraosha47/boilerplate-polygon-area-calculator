@@ -26,7 +26,7 @@ class Rectangle():
           self.picture += self.width * "*" + "\n"
           i += 1
       return(self.picture)
-
+#just trying it see how git works in combo with replit
 
 class Square(Rectangle):
   def __init__(self, side):
