@@ -2,6 +2,10 @@ class Rectangle():
   def __init__(self, width, height):
     self.width = width
     self.height = height
+
+  def __str__(self):
+      return("Rectangle(width="+ str(self.width) + ", height="+ str(self.height) +")")
+
   #region methods-------------------
   def get_area(self):
       self.area = self.width * self.height
