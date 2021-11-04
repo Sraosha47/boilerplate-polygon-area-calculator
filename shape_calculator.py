@@ -11,6 +11,9 @@ class Rectangle():
       self.perimeter = 2 * self.width + 2 * self.height
       return(self.perimeter)
 
+  def get_diagonal(self):
+      self.diagonal = (self.width ** 2 + self.height ** 2) ** .5
+      return(self.diagonal)
 
 class Square(Rectangle):
     pass
