@@ -29,4 +29,8 @@ class Rectangle():
 
 
 class Square(Rectangle):
-    pass
+  def __init__(self, side):
+      self.width = side
+      self.height = side
+      super().__init__(self.width, self.height)
+
