@@ -1,4 +1,6 @@
 from shape_test import shape_calc_test
+
+#class Rectange-----------------------------------------------------------
 class Rectangle():
     def __init__(self, width, height):
         self.width = width
@@ -34,7 +36,14 @@ class Rectangle():
     def set_height(self, height):
         self.height = height
 
+    def get_amount_inside(self, shape):
+        x = self.width / shape.width
+        y = self.height / shape.height
+        return(int(x*y))
+
     #endregion----------------------------------------------------------
+#endregion--------------------------------------------------------------
+
 class Square(Rectangle):
     def __init__(self, side):
         self.width = side

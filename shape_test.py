@@ -1,7 +1,7 @@
 def shape_calc_test(rectangle, square):
     #creating objects--------------------------------------
-    rect = rectangle(3, 6)
-    sq = square(5)
+    rect = rectangle(16, 8)
+    sq = square(4)
     #endregion---------------------------------------------
 
     #defining functions------------------------------------
@@ -29,6 +29,9 @@ def shape_calc_test(rectangle, square):
         print(rectangle.get_picture())
         print(square.get_picture())
 
+    def amount_test(shape1, shape2):
+        test = shape1.get_amount_inside(shape2)
+        print(test)
     
     #endregion-------------------------------------------------
 
@@ -40,5 +43,6 @@ def shape_calc_test(rectangle, square):
     perimeter_test(rect, sq)
     diagonal_test(rect, sq)
     picture_test(rect, sq)
+    amount_test(rect, sq)
     #endregion-------------------------------------------------
 
