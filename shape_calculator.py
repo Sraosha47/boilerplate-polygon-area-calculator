@@ -15,5 +15,14 @@ class Rectangle():
       self.diagonal = (self.width ** 2 + self.height ** 2) ** .5
       return(self.diagonal)
 
+  def get_picture(self):
+      self.picture = ''
+      i = 0
+      while i < (self.height):
+          self.picture += self.width * "*" + "\n"
+          i += 1
+      return(self.picture)
+
+
 class Square(Rectangle):
     pass
