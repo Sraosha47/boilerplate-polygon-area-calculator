@@ -1,3 +1,4 @@
+from shape_test import shape_calc_test
 class Rectangle():
   def __init__(self, width, height):
     self.width = width
@@ -26,7 +27,6 @@ class Rectangle():
           self.picture += self.width * "*" + "\n"
           i += 1
       return(self.picture)
-#just trying it see how git works in combo with replit
 
 class Square(Rectangle):
   def __init__(self, side):
@@ -36,3 +36,5 @@ class Square(Rectangle):
 
   def __str__(self):
       return("Square(side=" + str(self.width) + ")")
+
+shape_calc_test(Rectangle, Square)
