@@ -1,4 +1,3 @@
-from shape_test import shape_calc_test
 class Rectangle():
   def __init__(self, width, height):
     self.width = width
@@ -37,5 +36,3 @@ class Square(Rectangle):
 
   def __str__(self):
       return("Square(side=" + str(self.width) + ")")
-
-shape_calc_test(Rectangle, Square)
