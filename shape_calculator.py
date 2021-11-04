@@ -23,7 +23,7 @@ class Rectangle():
         return(self.diagonal)
 
     def get_picture(self):
-        if self.width <= 50 and self.height <= 50:
+        if self.width <= 50 or self.height <= 50:
             self.picture = ''
             i = 0
             while i < (self.height):
